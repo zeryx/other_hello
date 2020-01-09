@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repoA
-    - uses: actions/checkout@master
+      uses: actions/checkout@master
       with:
         path: repoA
     - name: Checkout repoB
-    - uses: actions/checkout@master
+      uses: actions/checkout@master
       with:
         token: ${{ secrets.GIT_TOKEN }}
         repository: ${{ secrets.ALGO_MASTER }}
