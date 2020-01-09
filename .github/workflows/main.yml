@@ -23,8 +23,8 @@ jobs:
         cd repoB
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action Example"
-        git add src/*
-        git commit -m "Added changes"
+        git add *
+        git commit -m "Added changes from ${{ secrets.ALGO_MASTER }}"
     - name: Push changes
       uses: ad-m/github-push-action@v0.5.0
       with:
