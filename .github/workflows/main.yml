@@ -17,7 +17,7 @@ jobs:
         path: repoB
     - name: Move working directory A to B
       run: |
-        mv -f repoA/src repoB 
+        mv -f repoA/src/* repoB/src 
     - name: Commit files
       run: |
         cd repoB
