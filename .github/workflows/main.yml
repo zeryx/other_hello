@@ -17,7 +17,7 @@ jobs:
         path: repoB
     - name: Move working directory A to B
       run: |
-        mv repoA/src repoB/src 
+        mv -f repoA/src repoB/src 
     - name: Commit files
       run: |
         cd repoB
@@ -30,5 +30,4 @@ jobs:
       with:
         github_token: ${{ secrets.GIT_TOKEN }}
         repository_name: ${{ secrets.ALGO_MASTER }}
-        force: 1
         directory: repoB
