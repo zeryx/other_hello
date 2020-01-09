@@ -29,6 +29,6 @@ jobs:
       uses: ad-m/github-push-action@v0.5.0
       with:
         github_token: ${{ secrets.GIT_TOKEN }}
-        repository_name: ${{ secrets.ALGO_MASTER }}
+        repository: ${{ secrets.ALGO_MASTER }}
         directory: repoB
         force: True
